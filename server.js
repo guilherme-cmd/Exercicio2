@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
@@ -11,7 +13,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Servir arquivos estáticos da pasta "public" para o root e outras rotas não correspondidas
-app.use(express.static(path.join(__dirname, '/public')));
+
+app.use('/app', express.static (path.join (__dirname, '/public')))
 
 // Redirecionar todas as solicitações não correspondidas para a página inicial
 app.get('*', (req, res) => {
