@@ -1,9 +1,63 @@
 body {
-    background-color: yellow;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.car-list {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.add-car-form {
+    flex: 1;
+}
+
+h1 {
     text-align: center;
-    padding: 20px;
-    font-size: 24px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
